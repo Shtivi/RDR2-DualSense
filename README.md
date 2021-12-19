@@ -1,17 +1,23 @@
-# RDR2-Combat-Experience
-This mod aims to enhance the combat experience in the game, with several configurable additions.
+# RDR2-Dual-Sense-5
+This mod brings DualSense 5 adaptive triggers along with some other controller features to RDR2.
 
 ### Installation:
 - Download and install AB's ScripthookRDR2: http://www.dev-c.com/rdr2/scripthookrdr2/
 - Make sure you have an asi loader, it usually comes along with Scripthook.
-- Copy *CombatExperience.asi* and *CombatExperience.ini* files to the game's root folder.
+- Copy *DualSense.asi* and the *DualSense* folder to the game's root folder.
 
-### Features overview
-NOTE: All features can be turned off through the .ini file.
-- The camera can now be zoomed while aiming in third person. 
-  Use the mouse wheel to zoom in / out if you're using keyboard and mouse, or the down arrow in your controller.
-- Machete and cleaver will now cut off specific bodyparts upon hit (head / arms / legs).
-- The camera slightly shakes upon shot, giving a more realistic sense to shooting.
+### Running:
+- Run the game.
+- Run the controller-service.exe file in the DualSense folder.
+- Yes, you have to run it everytime. I know it's not ideal, but for now this is how it works.
+
+### Features overview:
+- DS5 Adaptive triggers.
+- Different trigger effects according to your equipped weapon: manual guns, throwables, gatling / maxim gun, cannons, etc.
+- Weapon condition affects the trigger's stiffness.
+- Led indication for health and stamina.
+- Controllable settings.
 
 ### Known issues:
-- Melee weapons gore isn't working when on dead NPCs. It does work when they're knocked out.
+- Controller's output sound might not work when the mod is running and your headphones are plugged to the controller. 
+  Fix by plugging them to your PC directly.

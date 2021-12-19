@@ -19,12 +19,20 @@ bool Initialize()
 	player = PLAYER::PLAYER_PED_ID();
 
 	ScriptSettings::load("DualSense/Settings.ini", new SettingsMap {
+		{ "StaminaIndication", "1" },
+		{ "HealthIndication", "1" },
+		{ "WeaponDegregationStiffness", "1" }
 	});
 
 	return true;
 }
 
 ofstream dualsenseInput;
+const char* mode = "OFF";
+float stiffness = 0;
+float pulseRate = 0;
+float health = 0;
+
 void writeDualsenseInput(const char* input)
 {
 	dualsenseInput.open("DualSense/inputs", std::ios_base::out);
@@ -32,21 +40,25 @@ void writeDualsenseInput(const char* input)
 	dualsenseInput.close();
 }
 
-void setDualsenseTriggerMode(const char* mode, float stiffness = 0)
+void setDualsenseTriggerMode(const char* _mode, float _stiffness = 0)
 {
-	writeDualsenseInput(
-		string("MODE=").append(mode)
-		.append("\n")
-		.append("STIFFNESS=").append(to_string(stiffness)
-	).c_str());
+	mode = _mode;
+
+	if (ScriptSettings::getBool("WeaponDegregationStiffness"))
+	{
+		stiffness = _stiffness;
+	}
+	else
+	{
+		stiffness = 0;
+	}
 }
 
-void tickDualSense()
+void updateTriggers()
 {
 	Hash weapon = getPedEquipedWeapon(player);
 	Hash mountedWeapon = NULL;
 	WEAPON::GET_CURRENT_PED_VEHICLE_WEAPON(player, &mountedWeapon);
-	debug(PED::IS_PED_SHOOTING(player));
 
 	if (PED::IS_PED_RELOADING(player))
 	{
@@ -54,7 +66,7 @@ void tickDualSense()
 	}
 	else if (WEAPON::_IS_WEAPON_THROWABLE(weapon) || WEAPON::IS_WEAPON_BOW(weapon))
 	{
-		setDualsenseTriggerMode("THROWABLE");s
+		setDualsenseTriggerMode("THROWABLE");
 	}
 	else if (WEAPON::IS_WEAPON_A_GUN(weapon))
 	{
@@ -89,7 +101,35 @@ void tickDualSense()
 	}
 	else
 	{
-		writeDualsenseInput("OFF");
+		setDualsenseTriggerMode("OFF");
+	}
+}
+
+void updateLights()
+{
+	if (ScriptSettings::getBool("HealthIndication"))
+	{
+		health = (float)ENTITY::GET_ENTITY_HEALTH(player) / (float)PED::GET_PED_MAX_HEALTH(player);
+	}
+	else
+	{
+		health = 1;
+	}
+
+	if (ScriptSettings::getBool("StaminaIndication"))
+	{
+		Ped staminaTarget = player;
+		if (PED::IS_PED_ON_MOUNT(player))
+		{
+			staminaTarget = PED::GET_MOUNT(player);
+		}
+
+		float stamina = PED::_GET_PED_STAMINA(staminaTarget) / PED::_GET_PED_MAX_STAMINA(staminaTarget);
+		pulseRate = 1 - stamina;
+	}
+	else
+	{
+		pulseRate = 0;
 	}
 }
 
@@ -105,11 +145,23 @@ void main()
 
 	while (true)
 	{
+
 		player = PLAYER::PLAYER_PED_ID();
 
 		try
 		{
-			tickDualSense();
+			updateTriggers();
+			updateLights();
+
+			writeDualsenseInput(
+				string("MODE=").append(mode)
+				.append("\n")
+				.append("STIFFNESS=").append(to_string(stiffness)
+				.append("\n")
+				.append("PULSE_RATE=").append(to_string(pulseRate))
+				.append("\n")
+				.append("HEALTH=").append(to_string(health))
+			).c_str());
 		}
 		catch (...)
 		{
@@ -143,7 +195,7 @@ void main()
 			DevTools::update();
 		}
 
-		if (true && IsKeyJustUp(VK_F2))
+		if (false && IsKeyJustUp(VK_F2))
 		{
 			DevTools::toggle();
 		}
