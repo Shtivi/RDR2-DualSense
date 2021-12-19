@@ -1,0 +1,369 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Src\Script</Filter>
+    </ClCompile>
+    <ClCompile Include="script.cpp">
+      <Filter>Src\Script</Filter>
+    </ClCompile>
+    <ClCompile Include="keyboard.cpp">
+      <Filter>Src\Script</Filter>
+    </ClCompile>
+    <ClCompile Include="Prompt.cpp">
+      <Filter>Src\Game\UI\Prompt</Filter>
+    </ClCompile>
+    <ClCompile Include="AttachedRope.cpp">
+      <Filter>Src\Game\Game\Ropes</Filter>
+    </ClCompile>
+    <ClCompile Include="AttachedRopesHandling.cpp">
+      <Filter>Src\Game\Game\Ropes</Filter>
+    </ClCompile>
+    <ClCompile Include="Math.cpp">
+      <Filter>Src\Script</Filter>
+    </ClCompile>
+    <ClCompile Include="GameStopwatch.cpp">
+      <Filter>Src\Script\Stopwatch</Filter>
+    </ClCompile>
+    <ClCompile Include="Stopwatch.cpp">
+      <Filter>Src\Script\Stopwatch</Filter>
+    </ClCompile>
+    <ClCompile Include="MultiVertexRope.cpp">
+      <Filter>Src\Game\Game\Ropes</Filter>
+    </ClCompile>
+    <ClCompile Include="Vehicles.cpp">
+      <Filter>Src\Game\Game\Vehicles</Filter>
+    </ClCompile>
+    <ClCompile Include="World.cpp">
+      <Filter>Src\Game\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Src\Game\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Blips.cpp">
+      <Filter>Src\Game\Game\Blips</Filter>
+    </ClCompile>
+    <ClCompile Include="Weapons.cpp">
+      <Filter>Src\Game\Game\Weapons</Filter>
+    </ClCompile>
+    <ClCompile Include="Logger.cpp">
+      <Filter>Src\Script</Filter>
+    </ClCompile>
+    <ClCompile Include="Ped.cpp">
+      <Filter>Src\Game\Game\Peds</Filter>
+    </ClCompile>
+    <ClCompile Include="PedBehavior.cpp">
+      <Filter>Src\Game\Game\Peds</Filter>
+    </ClCompile>
+    <ClCompile Include="UI.cpp">
+      <Filter>Src\Game\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="StringUtils.cpp">
+      <Filter>Src\Script\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="GUIDrawer.cpp">
+      <Filter>Src\Game\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="HelpMessages.cpp">
+      <Filter>Src\Game\UI\Notifications</Filter>
+    </ClCompile>
+    <ClCompile Include="RightText.cpp">
+      <Filter>Src\Game\UI\Notifications</Filter>
+    </ClCompile>
+    <ClCompile Include="Toast.cpp">
+      <Filter>Src\Game\UI\Notifications</Filter>
+    </ClCompile>
+    <ClCompile Include="Place.cpp">
+      <Filter>Src\Game\Game\Map\Places</Filter>
+    </ClCompile>
+    <ClCompile Include="PlacesFactory.cpp">
+      <Filter>Src\Game\Game\Map\Places</Filter>
+    </ClCompile>
+    <ClCompile Include="Subtitles.cpp">
+      <Filter>Src\Game\UI\Notifications</Filter>
+    </ClCompile>
+    <ClCompile Include="VectorUtils.cpp">
+      <Filter>Src\Script\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Src\Game\Game\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="ScriptSettings.cpp">
+      <Filter>Src\Script\Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="Conversation.cpp">
+      <Filter>Src\Game\Game\Peds\Interactions</Filter>
+    </ClCompile>
+    <ClCompile Include="ConversationAction.cpp">
+      <Filter>Src\Game\Game\Peds\Interactions</Filter>
+    </ClCompile>
+    <ClCompile Include="ConversationLine.cpp">
+      <Filter>Src\Game\Game\Peds\Interactions</Filter>
+    </ClCompile>
+    <ClCompile Include="Delay.cpp">
+      <Filter>Src\Game\Game\Peds\Interactions</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Src\Game\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="ScenarioPoint.cpp">
+      <Filter>Src\Game\Game\Peds</Filter>
+    </ClCompile>
+    <ClCompile Include="Propset.cpp">
+      <Filter>Src\Game\Game\Propsets</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseDataFile.cpp">
+      <Filter>Src\Script\DataFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="DictDataFile.cpp">
+      <Filter>Src\Script\DataFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="DataFiles.cpp">
+      <Filter>Src\Script\DataFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="MapArea.cpp">
+      <Filter>Src\Game\Game\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="MapAreasFactory.cpp">
+      <Filter>Src\Game\Game\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="PostOfficesFactory.cpp">
+      <Filter>Src\Game\Game\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="MoneyNotification.cpp">
+      <Filter>Src\Game\UI\Notifications</Filter>
+    </ClCompile>
+    <ClCompile Include="DevTools.cpp">
+      <Filter>Src\Script\DevTools</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils.cpp">
+      <Filter>Src\Script\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="NamesGenerator.cpp">
+      <Filter>Src\Script\NamesGenerator</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\inc\types.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\enums.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\natives.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\main.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Main.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="script.h">
+      <Filter>Src\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="keyboard.h">
+      <Filter>Src\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="Prompt.h">
+      <Filter>Src\Game\UI\Prompt</Filter>
+    </ClInclude>
+    <ClInclude Include="AttachedRope.h">
+      <Filter>Src\Game\Game\Ropes</Filter>
+    </ClInclude>
+    <ClInclude Include="AttachedRopesHanding.h">
+      <Filter>Src\Game\Game\Ropes</Filter>
+    </ClInclude>
+    <ClInclude Include="Stopwatch.h">
+      <Filter>Src\Script\Stopwatch</Filter>
+    </ClInclude>
+    <ClInclude Include="MultiVertexRope.h">
+      <Filter>Src\Game\Game\Ropes</Filter>
+    </ClInclude>
+    <ClInclude Include="Rope.h">
+      <Filter>Src\Game\Game\Ropes</Filter>
+    </ClInclude>
+    <ClInclude Include="Vehicles.h">
+      <Filter>Src\Game\Game\Vehicles</Filter>
+    </ClInclude>
+    <ClInclude Include="World.h">
+      <Filter>Src\Game\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Src\Game\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Blips.h">
+      <Filter>Src\Game\Game\Blips</Filter>
+    </ClInclude>
+    <ClInclude Include="Weapons.h">
+      <Filter>Src\Game\Game\Weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="Logger.h">
+      <Filter>Src\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="Ped.h">
+      <Filter>Src\Game\Game\Peds</Filter>
+    </ClInclude>
+    <ClInclude Include="PedBehavior.h">
+      <Filter>Src\Game\Game\Peds</Filter>
+    </ClInclude>
+    <ClInclude Include="UI.h">
+      <Filter>Src\Game\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="StringUtils.h">
+      <Filter>Src\Script\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="GUIDrawer.h">
+      <Filter>Src\Game\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Place.h">
+      <Filter>Src\Game\Game\Map\Places</Filter>
+    </ClInclude>
+    <ClInclude Include="PlacesFactory.h">
+      <Filter>Src\Game\Game\Map\Places</Filter>
+    </ClInclude>
+    <ClInclude Include="VectorUtils.h">
+      <Filter>Src\Script\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Src\Game\Game\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="ScriptSettings.h">
+      <Filter>Src\Script\Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="Conversation.h">
+      <Filter>Src\Game\Game\Peds\Interactions</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Src\Game\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Math.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="ScenarioPoint.h">
+      <Filter>Src\Game\Game\Peds</Filter>
+    </ClInclude>
+    <ClInclude Include="Propset.h">
+      <Filter>Src\Game\Game\Propsets</Filter>
+    </ClInclude>
+    <ClInclude Include="CarriableTypes.h">
+      <Filter>Src\Game\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseDataFile.h">
+      <Filter>Src\Script\DataFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="DictDataFile.h">
+      <Filter>Src\Script\DataFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="DataFiles.h">
+      <Filter>Src\Script\DataFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimalType.h">
+      <Filter>Src\Game\Game\Peds</Filter>
+    </ClInclude>
+    <ClInclude Include="MapArea.h">
+      <Filter>Src\Game\Game\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="MapAreasFactory.h">
+      <Filter>Src\Game\Game\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="PostOfficesFactory.h">
+      <Filter>Src\Game\Game\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="DevTools.h">
+      <Filter>Src\Script\DevTools</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils.h">
+      <Filter>Src\Script\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="EventsChannel.h">
+      <Filter>Src\Script\EventsChannel</Filter>
+    </ClInclude>
+    <ClInclude Include="EventsSubscriber.h">
+      <Filter>Src\Script\EventsChannel</Filter>
+    </ClInclude>
+    <ClInclude Include="NamesGenerator.h">
+      <Filter>Src\Script\NamesGenerator</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{fe82bd4a-2d14-486a-8be5-8bf6b50a2414}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src">
+      <UniqueIdentifier>{99988ac4-ab5d-4a8e-ad13-6426aa838402}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Script">
+      <UniqueIdentifier>{1ab8b354-9e05-4e09-af58-2ecd61348e89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Script\Stopwatch">
+      <UniqueIdentifier>{1c184575-0720-41a2-9eb6-e3c77343c25e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Game">
+      <UniqueIdentifier>{6db80ad3-fbb5-4bb0-9a52-c14b20395c43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Game\Camera">
+      <UniqueIdentifier>{4f791842-9877-4119-a36f-968b472fc6dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Game\UI">
+      <UniqueIdentifier>{070c80d5-c8b3-4155-8d0a-1e0c5f4e3eb6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Game\UI\Prompt">
+      <UniqueIdentifier>{733612d0-6ed0-48b3-bea5-e46a72eb43ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Script\Utils">
+      <UniqueIdentifier>{ce953907-c8ce-4e07-8e97-eb8a358fef50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Game\UI\Notifications">
+      <UniqueIdentifier>{5a59f470-2f91-4e19-a8fd-be1e44a531bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Game\Game">
+      <UniqueIdentifier>{2a28b223-d801-4b75-a650-9532d719dab8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Game\Game\Ropes">
+      <UniqueIdentifier>{f9123656-93e1-4279-9c47-af84e66142b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Game\Game\Vehicles">
+      <UniqueIdentifier>{53d50ef4-e6f2-4818-a7c7-079e1082e49a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Game\Game\Blips">
+      <UniqueIdentifier>{7c20fb0c-1914-4cea-ac33-ace53061a8d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Game\Game\Weapons">
+      <UniqueIdentifier>{6acf719e-6ddf-4d08-809a-79256274a810}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Game\Game\Peds">
+      <UniqueIdentifier>{83ffa2e6-1816-4e98-8a00-cf66100cd40b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Game\Game\Player">
+      <UniqueIdentifier>{657ba411-d5ff-4433-b52f-08f2613bf3a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Script\Settings">
+      <UniqueIdentifier>{baad614f-3d90-4ed3-af52-2079d74cef72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Game\Game\Peds\Interactions">
+      <UniqueIdentifier>{cc89db9b-e3da-460e-ad0e-0cbe13cbfdd2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Game\Game\Propsets">
+      <UniqueIdentifier>{0c1731b3-9ab2-4307-81c2-d1df4a8b8394}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Script\DataFiles">
+      <UniqueIdentifier>{0f9be958-1abf-487d-b7b6-0901810ddab4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Game\Game\Map">
+      <UniqueIdentifier>{071bd523-5c59-4c4b-9a25-927fd83bfc96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Script\DevTools">
+      <UniqueIdentifier>{8fc4a355-95ad-45ed-b460-aa2da9dffe8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Game\Game\Map\Places">
+      <UniqueIdentifier>{74cd668c-795c-40ec-ab7a-3361a85fb49d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Script\EventsChannel">
+      <UniqueIdentifier>{b71c9346-1f41-41e7-8ca9-e5d6367b9fdd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Script\NamesGenerator">
+      <UniqueIdentifier>{f9dab4dc-6c58-4e4e-af89-1c06a8b59420}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
